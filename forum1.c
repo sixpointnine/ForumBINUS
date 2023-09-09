@@ -6,7 +6,7 @@ int main() {
     char jenisBensin[10];
     double konsumsiBahanBakar = 0.0;
     double bensinAwal, bensinAkhir, jarakTempuh;
-    char modeMenyupir[20];
+    char modeMenyupir[10];
     
     //Tampilan awal
     printf("\nPenghitung Efisiensi Bahan Bakar Pertamax dan Pertalite");
