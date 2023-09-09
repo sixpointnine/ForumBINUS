@@ -49,13 +49,14 @@ int main() {
     printf("Masukkan jarak yang ditempuh (km): ");
     scanf("%lf", &jarakTempuh);
 
+	printf("\n----------------------------------------------\n");
     double bensinDibutuhkan = jarakTempuh / konsumsiBahanBakar;
     bensinAkhir = bensinAwal - bensinDibutuhkan;
 
     if (bensinAkhir <= 0) {
         printf("\n Anda kehabisan bensin di tengah perjalanan!\n");
     } else {
-        printf("\n Jumlah bahan bakar yang dibutuhkan: %.2lf liter\n", bensinDibutuhkan);
+        printf("\nJumlah bahan bakar yang dibutuhkan: %.2lf liter\n", bensinDibutuhkan);
         printf("Jumlah bahan bakar akhir: %.2lf liter\n", bensinAkhir);
     }
 
