@@ -14,7 +14,7 @@ int main() {
     printf("Pilih jenis Bahan Bakar  (Pertamax/Pertalite): ");
     scanf("%s", jenisBensin);
 
-    if (strcmp(jenisBensin, "Pertamax") == 0 || strcmp(jenisBensin,"pertamax")==0) {
+    if (strcmp(jenisBensin, "Pertamax") == 0 || strcmp(jenisBensin,"pertamax")==0|| strcmp(jenisBensin,"PERTAMAX")==0) {
         printf("Pilih cara berkendara (konstan/stop&go): ");
         scanf("%s", modeMenyupir);
 
@@ -26,7 +26,7 @@ int main() {
             printf("Cara berkendara tidak valid.\n");
             return 1;
         }
-    } else if (strcmp(jenisBensin, "Pertalite") == 0 || strcmp(jenisBensin,"pertalite")==0) {
+    } else if (strcmp(jenisBensin, "Pertalite") == 0 || strcmp(jenisBensin,"pertalite")==0|| strcmp(jenisBensin,"PERTALITE")==0) {
         printf("Pilih cara berkendara  (konstan/stop&go): ");
         scanf("%s", modeMenyupir);
 
@@ -46,19 +46,18 @@ int main() {
     printf("Masukkan jumlah awal bahan bakar (liter): ");
     scanf("%lf", &bensinAwal);
 
-    printf("Masukkan jarak yang ditempuh (km): \n");
+    printf("Masukkan jarak yang ditempuh (km): ");
     scanf("%lf", &jarakTempuh);
 
     double bensinDibutuhkan = jarakTempuh / konsumsiBahanBakar;
     bensinAkhir = bensinAwal - bensinDibutuhkan;
 
     if (bensinAkhir <= 0) {
-        printf("Anda kehabisan bensin di tengah perjalanan!\n");
+        printf("\n Anda kehabisan bensin di tengah perjalanan!\n");
     } else {
-        printf("Jumlah bahan bakar yang dibutuhkan: %.2lf liter\n", bensinDibutuhkan);
+        printf("\n Jumlah bahan bakar yang dibutuhkan: %.2lf liter\n", bensinDibutuhkan);
         printf("Jumlah bahan bakar akhir: %.2lf liter\n", bensinAkhir);
     }
 
     return 0;
 }
-
