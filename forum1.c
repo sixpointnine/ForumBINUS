@@ -3,18 +3,17 @@
 
 int main() {
     //declare i/o
-    char jenisBensin[10];
+    char tipeBensin[10];
     double konsumsiBahanBakar = 0.0;
     double bensinAwal, bensinAkhir, jarakTempuh;
     char modeMenyupir[10];
     
     //Tampilan awal
-    printf("\nPenghitung Efisiensi Bahan Bakar Pertamax dan Pertalite");
-    printf("\n-------------------------------------------------------\n\n");
+    printf("\n-----------------Penghitung Efisiensi Bahan Bakar-----------------\n");
     printf("Pilih jenis Bahan Bakar  (Pertamax/Pertalite): ");
-    scanf("%s", jenisBensin);
+    scanf("%s", tipeBensin);
 
-    if (strcmp(jenisBensin, "Pertamax") == 0 || strcmp(jenisBensin,"pertamax")==0|| strcmp(jenisBensin,"PERTAMAX")==0) {
+    if (strcmp(tipeBensin, "Pertamax") == 0 || strcmp(tipeBensin,"pertamax")==0|| strcmp(tipeBensin,"PERTAMAX")==0) {
         printf("Pilih cara berkendara (konstan/stop&go): ");
         scanf("%s", modeMenyupir);
 
@@ -26,7 +25,7 @@ int main() {
             printf("Cara berkendara tidak valid.\n");
             return 1;
         }
-    } else if (strcmp(jenisBensin, "Pertalite") == 0 || strcmp(jenisBensin,"pertalite")==0|| strcmp(jenisBensin,"PERTALITE")==0) {
+    } else if (strcmp(tipeBensin, "Pertalite") == 0 || strcmp(tipeBensin,"pertalite")==0|| strcmp(tipeBensin,"PERTALITE")==0) {
         printf("Pilih cara berkendara  (konstan/stop&go): ");
         scanf("%s", modeMenyupir);
 
